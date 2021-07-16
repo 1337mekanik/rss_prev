@@ -1,1 +1,1 @@
-https://github.com/1337mekanik/rsschool-cv/cv
+https://1337mekanik.github.io/rsschool-cv/
