@@ -1,1 +1,0 @@
-https://github.com/1337mekanik/rsschool-cv/cv
