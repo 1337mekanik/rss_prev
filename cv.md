@@ -5,6 +5,7 @@ __E-mail__: __n.v.sherstyuk@gmail.com, n.v.sherstyuk@yandex.ru__
 
 __Education__: Nakhimov Higher Naval Scool
 __Specialization__: Navigation
+__English__: B1 (Upper Intermediate)
 ___
 
 ###SUMMARY
@@ -16,5 +17,50 @@ __Hard-skills__:
 * HTML/CSS
     * Sass/SCSS
     * BEM
+    * Semantic HTML
+    * Bootstrap
 * Java (beginner)
 * Git, GitHub
+
+__Soft-skills__:
+* sociable
+* responsible
+* team player
+* good communication skills
+* courtesy towards others 
+
+__Code example:__
+``` 
+<section class="serv">
+    <div class="container">
+        <div class="serv__header">
+            <h3 class="serv__subtitle">What we do</h3>
+            <h2 class="serv__title">what we do</h2>
+            <div class="serv__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="serv__info">
+            <div class="serv__img">
+                <img src="/src/img/img/Layer 43@1X.png" alt="">
+            </div>
+            <div class="serv__func">
+                <ul class="serv__list">
+                    <li>Photography</li>
+                    <li>creativity</li>
+                    <li>web design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section> <!-- /SERV SECTION ENDING -->
+```
+
+___
+
+####Self studing:
+* online course: HTML/CSS by D.Lavrik
+* online course: HTML/CSS by E. Andrikanich 
+* online course: HTML/CSS/Git/JS by I. Petrichenko
+* Book: Java for begginers by Gilbert Schildt
+___
