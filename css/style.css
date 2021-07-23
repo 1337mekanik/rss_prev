@@ -35,10 +35,116 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-.body {
-    background: url(.img/background/1.png) center center/cover no-repeat;
+html {
+	position: relative;
+	font-family: Montserrat;
+	background: rgb(0,0,0) linear-gradient(0deg #fff 0%, #fff 0%, #000 100%);
 }
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+	position: relative;
+	z-index: 2;
+	padding: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #F7B443;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 2px 2px 25px #000;	
+}
+.navigation{
+	display: flex;
+	justify-content: space-between;
+}
+.nav__link {
+	text-align: center;
+	color: #fff;
+	padding: 0 80px;
+	text-shadow: #000 1px 0 10px;
+	border-right: #d6921b 2px solid;
+}
+.navigation__item:first-child{
+	border-left: #d6921b 2px solid;
+}
+
+/* ABOUT */
+.about {
+	position: relative;
+	top: -20px;
+	z-index: 1;
+	padding: 80px 0 60px;
+	background-image: url(/img/background/bg2.jpg);
+	border-radius: 0 0 25px 25px;
+	overflow: hidden;
+}
+.about__body{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.about__image{
+	max-width: 250px;
+}
+.about__image img{
+	border: #F7B443 5px solid;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	height: 250px;
+	width: 250px;
+	box-shadow: 1px 1px 15px #000;
+}
+.about__descr{
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 64px;
+}
+.descr__title{
+	font-size: 52px;
+}
+.descr__subtitle{
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
+/* SUMMARY */
+.summary {
+	padding: 30px 0;
+}
+.summary__title {
+	font-size: 52px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.summary__body {
+	margin-top: 20px;
+}
+.summary__text {
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+	line-height: 42px;
+}
+.summary__skills{
+	margin-top: 20px;
+	padding: 20px;
+	background-image: url(/img/background/bg1.jpg);
+	border-radius: 20px;
+}
+.skills__body{
+	font-size: 42px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.skills__code {
+	font-size: 12px;
 }
