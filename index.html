@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary: Sherstyuk</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="nav">
+                    <a class="nav__link" href="#">About</a>
+                    <a class="nav__link" href="#">Contacts</a>
+                    <a class="nav__link" href="#">Summary</a>
+                    <a class="nav__link" href="#">Skills</a>
+                    <a class="nav__link" href="#">rsschool</a>
+                </ul>
+            </nav>
+        </div>
+    </header> <!-- HEADER ENDING -->
+
+    <section class="about">
+        <div class="container">
+            <div class="about__body">
+                <div class="about__image">
+                    <img src="" alt="n.sherstyk">
+                </div>
+                <div class="about__descr">
+                    <div class="descr__title">Nikita Sherstyk</div>
+                    <div class="descr__subtitle">Front-end developer, junior</div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- ABOUT SECTION ENDING -->
+
+    <section class="summary">
+        <div class="container">
+            <div class="summary__title">Summary</div>
+            <div class="summary__body">
+                <p class="summary__text">
+                    A hard working and motivated individual with a strong work ethic. I’m always trying to perform tasks quickly and with quality, studing fast, always willing to try new things. Since 6 years old my whole life having close relationships with computers and now I’ve decided to guide my passion and love of computers and compurter scince towards IT. My main goal is to finish with sucsess stage#0 of RS School course, then take a part in stage#1 and try to find a job in already new working sphere to me - to be a Front-End developer.
+                    I’m always getting my goals complite and I’m excited to try myself in such interesting path.
+                </p>
+                <div class="summary__skills">
+                    <div class="skills__body">
+                        <div class="skills__item hard">
+                            <div class="item__title">
+                                Hard Skills
+                            </div>
+                            <ul>
+                                <li>HTML/CSS
+                                    <ul>
+                                    <li>Sass/SCSS</li>
+                                    <li>BEM</li>
+                                    <li>Semantic HTML</li>
+                                    <li>Bootstrap</li>
+                                    </ul>
+                                </li>
+                                <li>Java (beginner)</li>
+                                <li>Git, GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="skills__item soft">
+                            <div class="item__title">
+                                Soft Skills
+                            </div>
+                            <ul>
+                                <li>sociable</li>
+                                <li>responsible</li>
+                                <li>team player</li>
+                                <li>good communication skills</li>
+                                <li>courtesy towards others</li>
+                            </ul>
+                        </div>
+                        <div class="skills__code">
+                            <p class="code__title">
+                                Code Example
+                            </p>
+                            <details>
+                                <summary>Open code example</summary>
+                                <code>
+                                   <pre> 
+                                    public class MainActivity extends AppCompatActivity {
+
+                                        MediaPlayer mediaPlayer;
+                                        ImageView playPauseIcon;
+                                        SeekBar seekBar;
+
+                                        @Override
+                                        protected void onCreate(Bundle savedInstanceState) {
+                                            super.onCreate(savedInstanceState);
+                                            setContentView(R.layout.activity_main);
+
+                                            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.stuff);
+                                            playPauseIcon = findViewById(R.id.playImage);
+                                            seekBar = findViewById(R.id.seekBar2);
+                                            seekBar.setMax(mediaPlayer.getDuration());
+                                            seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                                                @Override
+                                                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                                                    if(fromUser) {
+                                                        mediaPlayer.seekTo(progress);
+                                                    }
+                                                }
+
+                                                @Override
+                                                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                                                }
+
+                                                @Override
+                                                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                                                }
+                                            });
+
+                                            new Timer().scheduleAtFixedRate(new TimerTask() {
+                                                @Override
+                                                public void run() {
+                                                    seekBar.setProgress(mediaPlayer.getCurrentPosition());
+                                                }
+                                            }, 0, 1000);
+                                        }
+
+                                        public void previous(View view) {
+                                            if(mediaPlayer.isPlaying()) {
+                                                seekBar.setProgress(0);
+                                                mediaPlayer.stop();
+                                            } else {
+                                                mediaPlayer.start();
+                                                playPauseIcon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
+                                            }
+                                        }
+
+                                        public void next(View view) {
+                                        }
+
+                                        public void play(View view) {
+                                            if (mediaPlayer.isPlaying()) {
+                                                mediaPlayer.pause();
+                                                playPauseIcon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
+                                            } else {
+                                                mediaPlayer.start();
+                                                playPauseIcon.setImageResource(R.drawable.ic_baseline_pause_24);
+                                            }
+                                        }
+                                    }
+                                    </pre>
+                                </code>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
