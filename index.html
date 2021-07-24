@@ -11,199 +11,49 @@
     <title>Summary: Sherstyuk</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="navigation">
-                <div class="navigation__item"><a class="nav__link" href="#">About</a></div>
-                <div class="navigation__item"><a class="nav__link" href="#">Contacts</a></div>
-                <div class="navigation__item"><a class="nav__link" href="#">Summary</a></div>
-                <div class="navigation__item"><a class="nav__link" href="#">Skills</a></div>
-                <div class="navigation__item"><a class="nav__link" href="#">rsschool</a></div>
-            </div>
-        </div>
-    </header> <!-- HEADER ENDING -->
-
-    <section class="about">
-        <div class="container">
-            <div class="about__body">
-                <div class="about__image">
-                    <img src="./img/icon/2.JPG" alt="n.sherstyk" class="img">
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="navigation">
+                        <div class="navigation__item"><a class="nav__link" href="#">About</a></div>
+                        <div class="navigation__item"><a class="nav__link" href="#">Contacts</a></div>
+                        <div class="navigation__item"><a class="nav__link" href="#">Summary</a></div>
+                        <div class="navigation__item"><a class="nav__link" href="#">Skills</a></div>
+                        <div class="navigation__item"><a class="nav__link" href="#">rsschool</a></div>
+                    </div>
                 </div>
-                <div class="about__descr">
-                    <div class="descr__title">Nikita Sherstyk</div>
-                    <div class="descr__subtitle">Front-end developer, junior</div>
-                </div>
-            </div>
-        </div>
-    </section> <!-- ABOUT SECTION ENDING -->
-
-    <section class="summary">
-        <div class="container">
-            <div class="summary__title">Summary</div>
-            <div class="summary__body">
-                <p class="summary__text">
-                    A hard working and motivated individual with a strong work ethic. I’m always trying to perform tasks quickly and with quality, studing fast, always willing to try new things. Since 6 years old my whole life having close relationships with computers and now I’ve decided to guide my passion and love of computers and compurter scince towards IT. My main goal is to finish with sucsess stage#0 of RS School course, then take a part in stage#1 and try to find a job in already new working sphere to me - to be a Front-End developer.
-                    I’m always getting my goals complite and I’m excited to try myself in such interesting path.
-                </p>
-                <div class="summary__skills">
-                    <div class="skills__body">
-                        <div class="skills__item hard">
-                            <div class="item__title">
-                                Hard Skills
-                            </div>
-                            <ul>
-                                <li>HTML/CSS
-                                    <ul>
-                                    <li>Sass/SCSS</li>
-                                    <li>BEM</li>
-                                    <li>Semantic HTML</li>
-                                    <li>Bootstrap</li>
-                                    </ul>
-                                </li>
-                                <li>Java (beginner)</li>
-                                <li>Git, GitHub</li>
-                            </ul>
+            </header> <!-- HEADER ENDING -->
+        
+            <section class="about">
+                <div class="container">
+                    <div class="about__body">
+                        <div class="about__image">
+                            <img src="./img/icon/2.JPG" alt="n.sherstyk" class="img">
                         </div>
-                        <div class="skills__item soft">
-                            <div class="item__title">
-                                Soft Skills
-                            </div>
-                            <ul>
-                                <li>sociable</li>
-                                <li>responsible</li>
-                                <li>team player</li>
-                                <li>good communication skills</li>
-                                <li>courtesy towards others</li>
-                            </ul>
-                        </div>
-                        <div class="skills__code">
-                            <p class="code__title">
-                                Code Example
-                            </p>
-                            <details>
-                                <summary>Open code example</summary>
-                                <code>
-                                   <pre> 
-                                    public class MainActivity extends AppCompatActivity {
-
-                                        MediaPlayer mediaPlayer;
-                                        ImageView playPauseIcon;
-                                        SeekBar seekBar;
-
-                                        @Override
-                                        protected void onCreate(Bundle savedInstanceState) {
-                                            super.onCreate(savedInstanceState);
-                                            setContentView(R.layout.activity_main);
-
-                                            mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.stuff);
-                                            playPauseIcon = findViewById(R.id.playImage);
-                                            seekBar = findViewById(R.id.seekBar2);
-                                            seekBar.setMax(mediaPlayer.getDuration());
-                                            seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-                                                @Override
-                                                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                                                    if(fromUser) {
-                                                        mediaPlayer.seekTo(progress);
-                                                    }
-                                                }
-
-                                                @Override
-                                                public void onStartTrackingTouch(SeekBar seekBar) {
-
-                                                }
-
-                                                @Override
-                                                public void onStopTrackingTouch(SeekBar seekBar) {
-
-                                                }
-                                            });
-
-                                            new Timer().scheduleAtFixedRate(new TimerTask() {
-                                                @Override
-                                                public void run() {
-                                                    seekBar.setProgress(mediaPlayer.getCurrentPosition());
-                                                }
-                                            }, 0, 1000);
-                                        }
-
-                                        public void previous(View view) {
-                                            if(mediaPlayer.isPlaying()) {
-                                                seekBar.setProgress(0);
-                                                mediaPlayer.stop();
-                                            } else {
-                                                mediaPlayer.start();
-                                                playPauseIcon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
-                                            }
-                                        }
-
-                                        public void next(View view) {
-                                        }
-
-                                        public void play(View view) {
-                                            if (mediaPlayer.isPlaying()) {
-                                                mediaPlayer.pause();
-                                                playPauseIcon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
-                                            } else {
-                                                mediaPlayer.start();
-                                                playPauseIcon.setImageResource(R.drawable.ic_baseline_pause_24);
-                                            }
-                                        }
-                                    }
-                                    </pre>
-                                </code>
-                            </details>
+                        <div class="about__descr">
+                            <div class="descr__title">Nikita Sherstyk</div>
+                            <div class="descr__subtitle">Front-end developer, junior</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section> <!-- SUMMARY SECTION ENDING -->
+            </section> <!-- ABOUT SECTION ENDING -->
 
-    <section class="info">
-        <div class="container">
-            <div class="info__body">
-                <div class="info__edu">
-                    <div class="edu__body">
-                        <p class="edu__title">Education and self studing</p>
-                        <div class="edu__education">
-                            <p class="edu__text">Education: Nakhimov Higher Naval Scool</p>
-                            <p class="edu__text">Specialization: Navigation</p>
-                            <p class="edu__text">English: B2 (Upper Intermediate)</p>
-                        </div>
-                        <div class="edu__self">
-                            <p class="self__title">Self studing courses</p>
-                            <ul>
-                                <li>online course: HTML/CSS by D.Lavrik</li>
-                                <li>online course: HTML/CSS by E. Andrikanich</li>
-                                <li>online course: HTML/CSS/Git/JS by I. Petrichenko</li>
-                                <li>Book: Java for begginers by Gilbert Schildt</li>
-                            </ul>
-                        </div>
-                    </div>
+            <section class="summary">
+            
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__body">
+                <div class="footer__item footer__item-link"><a href="https://github.com/1337mekanik" class="github-link">GitHub</a></div>
+                <div class="footer__item footer__item-img">
+                    <a href="https://rs.school/js/" class="link"><img src="/img/icon/rs_school_js.svg" alt="img"></a>
                 </div>
-                <div class="info__contacts">
-                    <p class="info__title">E-mail</p>
-                    <ul>
-                        <li>n.v.sherstyuk@gmail.com</li>
-                        <li>n.v.sherstyuk@yandex.ru</li>
-                    </ul>
+                <div class="footer__item footer__item-text">
+                    <div class="item__text">2021</div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <div class="footer__body">
-            <div class="footer__item">
-                <img src="img/icon/rs_school_js.svg" alt="rsschool_icon" class="item__image">
-            </div>
-            <div class="footer__item">
-                <p class="item__text">2021</p>
-            </div>
-            <div class="footer__item">
-                <a href="https://rs.school/js/" class="item__link">RS SCHOOL</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
