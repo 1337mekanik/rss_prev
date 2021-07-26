@@ -19,8 +19,8 @@
                         <div class="navigation__item"><a class="nav__link" href="#">About</a></div>
                         <div class="navigation__item"><a class="nav__link" href="#">Contacts</a></div>
                         <div class="navigation__item"><a class="nav__link" href="#">Summary</a></div>
-                        <div class="navigation__item"><a class="nav__link" href="#">Skills</a></div>
-                        <div class="navigation__item"><a class="nav__link" href="#">rsschool</a></div>
+                        <div class="navigation__item"><a class="nav__link" href="#skills">Skills</a></div>
+                        <div class="navigation__item"><a class="nav__link" href="https://rs.school/js/">rsschool</a></div>
                     </div>
                 </div>
             </header> <!-- HEADER ENDING -->
@@ -32,8 +32,8 @@
                             <img src="./img/icon/2.JPG" alt="n.sherstyk" class="img">
                         </div>
                         <div class="about__descr">
-                            <div class="descr__title">Nikita Sherstyk</div>
-                            <div class="descr__subtitle">Front-end developer, junior</div>
+                            <h1 class="descr__title">Nikita Sherstyk</h1>
+                            <h2 class="descr__subtitle">Front-end developer, junior</h2>
                         </div>
                     </div>
                 </div>
@@ -53,6 +53,144 @@
                     </div>
                 </div>
             </section> <!-- SUMMARY ENDING -->
+
+            <section class="skills">
+                <div class="container">
+                    <div class="skills__title">My skills:</div>
+                    <div class="skills__body">
+                        <div class="skills__item">
+                            <div class="skills__item-title"> Hard Skills:</div>
+                            <div class="skills__item-text">
+                                <ul>
+                                    <li>HTML/CSS
+                                        
+                                        <li>Sass/SCSS</li>
+                                        <li>BEM</li>
+                                        <li>Semantic HTML</li>
+                                        <li>Bootstrap</li>
+                                        
+                                    </li>
+                                    <li>Java (beginner)</li>
+                                    <li>Git, GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__item-title">Soft Skills:</div>
+                            <div class="skills__item-text">
+                                <ul>
+                                    <li>sociable</li>
+                                    <li>responsible</li>
+                                    <li>team player</li>
+                                    <li>good communication skills</li>
+                                    <li>courtesy towards others</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__code">
+                        <div class="code__title">
+                            Code Example (JAVA):
+                        </div>
+                        <details class="skills__code-text"> 
+                            <summary >Open code example</summary>
+                            <code>
+                               <pre class="skills__code-code"> 
+                                public class MainActivity extends AppCompatActivity {
+        
+                                    MediaPlayer mediaPlayer;
+                                    ImageView playPauseIcon;
+                                    SeekBar seekBar;
+        
+                                    @Override
+                                    protected void onCreate(Bundle savedInstanceState) {
+                                        super.onCreate(savedInstanceState);
+                                        setContentView(R.layout.activity_main);
+        
+                                        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.stuff);
+                                        playPauseIcon = findViewById(R.id.playImage);
+                                        seekBar = findViewById(R.id.seekBar2);
+                                        seekBar.setMax(mediaPlayer.getDuration());
+                                        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                                            @Override
+                                            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                                                if(fromUser) {
+                                                    mediaPlayer.seekTo(progress);
+                                                }
+                                            }
+        
+                                            @Override
+                                            public void onStartTrackingTouch(SeekBar seekBar) {
+        
+                                            }
+        
+                                            @Override
+                                            public void onStopTrackingTouch(SeekBar seekBar) {
+        
+                                            }
+                                        });
+        
+                                        new Timer().scheduleAtFixedRate(new TimerTask() {
+                                            @Override
+                                            public void run() {
+                                                seekBar.setProgress(mediaPlayer.getCurrentPosition());
+                                            }
+                                        }, 0, 1000);
+                                    }
+        
+                                    public void previous(View view) {
+                                        if(mediaPlayer.isPlaying()) {
+                                            seekBar.setProgress(0);
+                                            mediaPlayer.stop();
+                                        } else {
+                                            mediaPlayer.start();
+                                            playPauseIcon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
+                                        }
+                                    }
+        
+                                    public void next(View view) {
+                                    }
+        
+                                    public void play(View view) {
+                                        if (mediaPlayer.isPlaying()) {
+                                            mediaPlayer.pause();
+                                            playPauseIcon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
+                                        } else {
+                                            mediaPlayer.start();
+                                            playPauseIcon.setImageResource(R.drawable.ic_baseline_pause_24);
+                                        }
+                                    }
+                                }
+                                </pre>
+                            </code>
+                        </details>
+                    </div>
+                </div>
+            </section> <!-- SKILLS ENDING -->
+
+            <section class="education">
+                <div class="container">
+                    <div class="education__title">Education and self studing:</div>
+                    <div class="education__text">
+                        <div class="text__item">
+                            <p class="edu__text"><span>Education</span> Nakhimov Higher Naval Scool</p>
+                            <p class="edu__text"><span>Specialization</span> Navigation</p>
+                            <p class="edu__text"><span>English</span> Upper Intermediate</p>
+                        </div>
+                        <div class="text__item">
+                            <ul>
+                                <li><span>online course</span>: HTML/CSS by D.Lavrik</li>
+                                <li><span>online course</span> HTML/CSS by E. Andrikanich</li>
+                                <li><span>online course</span> HTML/CSS/Git/JS by I. Petrichenko</li>
+                                <li><span>Book</span>: Java for begginers by Gilbert Schildt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
         </div>
         <footer class="footer">
             <div class="footer__body">
